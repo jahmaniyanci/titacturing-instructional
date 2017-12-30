@@ -40,9 +40,13 @@ git push https://github.com/jahmaniyanci/titacturing-instructional.git --all
 jahmaniyanci@outlook.com
 getit@11
 
-
 git push https://jahmaniyanci@outlook.com:getit@11@github.com/jahmaniyanci/titacturing-instructional.git --all
 git push https://github.com/jahmaniyanci/titacturing-instructional.git --all
+
+
+Issue: NOTHING WORKED
+--------------------------
+Fix - I uploaded files form github to a new branch: 00-initenvironments
 
 
 git clone https://github.com/jahmaniyanci/titacturing-instructional.git
