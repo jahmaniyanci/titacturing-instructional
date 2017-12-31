@@ -35,7 +35,7 @@ Check out a branch
 ------------------------------------------------------
 * See "Create / Delete A Branch At GitHub" 
   Branch "00-createbranch"
-
+  
 - Checkout branch: 00-createbranch
 git checkout 00-createbranch 
 
