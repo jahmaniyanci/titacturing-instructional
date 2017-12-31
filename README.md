@@ -1,41 +1,30 @@
-Create / Delete A Branch At GitHub 
-===================================================
-We are using my project on github: jahmaniyanci/titacturing-instructional
+Create React App
+-------------------------
+- Run crtapp.sh
+
+Copy Version Of This App
+--------------------------
+copy tictacuring to 02-tictacuring-init
 
 
-Select Master Branch From GitHub
-------------------------------------------------------
-o Select project master
-- Select project: titacturing-instructional
-o Select Branch Drop Down
-- Select master branch
+Clean Files
+------------------------
+node_modules - The node.js module dependencies
+package.json 
+.gitignore
+yarn.lock - Yarn provides the versions of our apps
+/public - The app, files used by server 
+/public/index.html - Change title
+/public/favicon.ico - Replace with new one
+/src - Remove all except index.js
+/src/index.js - Simplify to this, note removal of semicolon
+	import React from 'react'
+	import ReactDOM from 'react-dom'
 
-* See selectmasterbranch.png
-
-
-Create A Branch At GitHub 
-------------------------------------------------------
-o Select Branch: Drop Down
-- Open and "Create a branch"
--  Enter a name: 00-createbranch
-Click [Create branch]
-
-* See createnewbranch.png
-
-
-Delete A Branch At GitHub
-------------------------------------------------------
-o Select all branches
-- Select on counter toolbar: [# branches]
-o All branches will be shown
-o Delete desired branch, ex: 00-createbranch
-
-* allbranches.png
-
-
-
-
-
+	ReactDOM.render(
+	  <App />,
+	  document.getElementById('root')
+	)
 
 
 
