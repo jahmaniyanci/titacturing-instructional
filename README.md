@@ -1,36 +1,77 @@
-Create / Delete A Branch At GitHub 
-===================================================
+Update GitHub Branch With Local Resources 
+======================================================
 We are using my project on github: jahmaniyanci/titacturing-instructional
 
 
-Select Master Branch From GitHub
+Create local workspace
 ------------------------------------------------------
-o Select project master
-- Select project: titacturing-instructional
-o Select Branch Drop Down
-- Select master branch
-
-* See selectmasterbranch.png
+- Create a local workspace form example:
+/home/superwoman/workspacegit/
 
 
-Create A Branch At GitHub 
+Clone Branch Into Workspace
 ------------------------------------------------------
-o Select Branch: Drop Down
-- Open and "Create a branch"
--  Enter a name: 00-createbranch
-Click [Create branch]
+- cd /home/superwoman/workspacegit/
+git clone https://github.com/jahmaniyanci/titacturing-instructional.git
+cd titacturing-instructional
 
-* See createnewbranch.png
+git status
+* We should see: 
+Your branch is up-to-date with 'origin/master'.
 
 
-Delete A Branch At GitHub
+List All branches
 ------------------------------------------------------
-o Select all branches
-- Select on counter toolbar: [# branches]
-o All branches will be shown
-o Delete desired branch, ex: 00-createbranch
+git branch -a
 
-* allbranches.png
+- We should see, something similar:
+* master
+remotes/origin/00-createbranch
+remotes/origin/HEAD -> origin/master
+remotes/origin/master
+
+
+Check out a branch
+------------------------------------------------------
+* See "Create / Delete A Branch At GitHub" 
+  Branch "00-createbranch"
+
+- Checkout branch: 00-createbranch
+git checkout 00-createbranch 
+
+git status
+- We should see:
+On branch 00-createbranch
+Your branch is up-to-date with 'origin/00-createbranch'.
+
+
+Update With Local Files and Resources
+------------------------------------------------------
+o Create files, directories and other resources
+- This is your development workspace
+- Create files
+
+
+Update Git Remote Repository With Local Files
+------------------------------------------------------
+git add .
+git commit -m "update branch initial branch"
+
+git status
+- We should see:
+Your branch is ahead of 'origin/00-createbranch' by 1 commit.
+(use "git push" to publish your local commits)
+
+git push
+- Enter:
+Username for 'https://github.com': xccxdc@theemail.com
+Password for 'https://jahmaniyanci@outlook.com@github.com':
+
+git status
+
+- We should see:
+On branch 00-createbranch
+Your branch is up-to-date with 'origin/00-createbranch'.
 
 
 
